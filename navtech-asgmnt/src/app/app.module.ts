@@ -24,7 +24,6 @@ import { ConfirmationService, MessageService } from "primeng/api";
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { InputNumberModule } from 'primeng/inputnumber';
-import { FooterComponent } from './footer/footer.component';
 import { CheckboxModule } from 'primeng/checkbox';
 import { OrdersListComponent } from './orders-list/orders-list.component';
 import { AddOrderComponent } from './add-order/add-order.component';
@@ -39,7 +38,6 @@ import { EditOrderComponent } from './edit-order/edit-order.component';
     HeaderComponent,
     LoginComponent,
     FourOFourComponent,
-    FooterComponent,
     OrdersListComponent,
     AddOrderComponent,
     EditOrderComponent
