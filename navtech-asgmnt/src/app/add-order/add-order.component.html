@@ -1,0 +1,33 @@
+<form [formGroup]="newOrder" (ngSubmit)="addOrder()" class="login-form">
+    <div class="card">
+        <div class="p-fluid">
+            <div class="p-field">
+                <label for="orderNumber">Order number</label>
+                <input id="orderNumber" type="text" class="p-inputtext-sm" pInputText formControlName="orderNumber" pKeyFilter="num">
+            </div>
+            <div class="p-field">
+                <label for="orderDueDate">Order due date</label>
+                <p-calendar formControlName="orderDueDate"></p-calendar>
+            </div>
+            <div class="p-field">
+                <label for="customerBuyerName">Customer buyer name</label>
+                <input id="customerBuyerName" type="text" class="p-inputtext-sm" pInputText formControlName="customerBuyerName"> 
+            </div>
+            <div class="p-field">
+                <label for="customerAddress">Customer address</label>
+                <textarea rows="4" cols="30" pInputTextarea autoResize="autoResize" formControlName="customerAddress"></textarea>
+            </div>
+            <div class="p-field">
+                <label for="customerPhone">Customer phone</label>
+                <input id="customerPhone" type="text" class="p-inputtext-sm" pInputText pKeyFilter="num" formControlName="customerPhone"> 
+            </div>
+            <div class="p-field">
+                <label for="orderTotal">Order Total</label>
+                <p-inputNumber mode="currency" inputId="currency-india" currency="INR" currencyDisplay="code" locale="en-IN" formControlName="orderTotal">
+                </p-inputNumber>
+            </div>
+            
+        </div>
+        <button pButton pRipple type="button" label="Add product" class="p-button-primary login-button" [disabled]="!newOrder.valid" type="submit"></button>
+    </div>
+</form>
