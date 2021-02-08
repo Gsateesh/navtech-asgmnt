@@ -39,7 +39,6 @@ export class LoginComponent implements OnInit {
       this.loginFailedAlert();
     }
   }
-
   loginFailedAlert() {
     this.messageService.add({key: 'bc', severity:'error', summary: 'Failed', detail: 'Please check your login credentials!'});
   }
