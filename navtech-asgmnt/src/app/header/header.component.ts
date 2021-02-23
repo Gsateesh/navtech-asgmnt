@@ -32,6 +32,8 @@ export class HeaderComponent implements OnInit {
     this.User = this.cookieService.get( 'name' );
   }
 
+
+
   logout() {
     this.cookieService.deleteAll();
     this.router.navigate(['login']);
